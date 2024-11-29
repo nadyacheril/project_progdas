@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Form Cheril</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="" id="form" enctype="multipart/form-data">
+            <h1>FORM DATA BARANG</h1>
+            <label for="kode-produk">Kode Produk</label>
+            <input type="text" id="kode-produk" nama="kode-produk" kode="kode-Produk" value="MD-000"
+                placeholder="Kode Produk" readonly>
+
+            <label for="nama-Produk">Nama Produk</label>
+            <input type="text" id="nama-produk" nama="nama-produk" kode="nama-produk" placeholder="Nama produk">
+
+            <label for="harga-produk">Harga Produk</label>
+            <input type="text" id="harga-produk" nama="harga-produk" kode="harga-produk" placeholder="Harga Produk">
+
+            <label for="satuan">Satuan</label>
+            <select name="satuan" id="satuan">
+                <option value="" disabled selected>Pilih Satuan</option>
+                <option value="Gelas">Gelas</option>
+                <option value="Box Makanan">Box Makanan</option>
+                <option value="Piring">Piring</option>
+            </select>
+
+            <label for="kategori">Kategori</label>
+            <select name="kategori" id="kategori">
+                <option value="" disabled selected>Pilih Kategori</option>
+                <option value="Minuman dingin">Pizza</option>
+                <option value="Minuman Dingin">Minuman Dingin</option>
+                <option value="Minuman Panas">Minuman Panas</option>
+            </select>
+
+            <label for="stock_produk">Stock Produk</label>
+            <input type="number" name="stock_produk" id="stock_produk" placeholder="Stock Produk" required min="0">
+
+            <label for="url">Url gambar</label>
+            <input type="url" id="url" nama="url" kode="url" placeholder="Masukan url Gambar">
+
+            <label for="stok-awal">Stok awal</label>
+
+            <input type="number" id="stok-awal" nama="stok-awal" kode="stok-awal" placeholder="Stok Awal">
+            <button type="button" onclick="saveForm()">Submit</button>
+        </form>
+        <table id="productTable">
+            <h1>DATA BARANG</h1>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Kode produk</th>
+                    <th>Nama produk</th>
+                    <th>Harga Produk</th>
+                    <th>Satuan</th>
+                    <th>Kategori</th>
+                    <th>Stok Produk</th>
+                    <th>Gambar Produk</th>
+                    <th>Stok Awal</th>
+                    <th>Modify</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="inedex.js"></script>
+
+</body>
+
+</html>
