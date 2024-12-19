@@ -1,0 +1,181 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf0f5;
+    /* Latar belakang abu-ros muda */
+    color: #555;
+    padding: 20px;
+}
+
+/* Bagian Section */
+section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Judul */
+h1 {
+    color: #ff69b4;
+    /* Pink cerah */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Label Form */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #777;
+}
+
+/* Input, Select */
+input[type="text"],
+input[type="number"],
+input[type="url"],
+select,
+button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ffb6c1;
+    /* Border pink muda */
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+/* Input focus */
+input:focus,
+select:focus {
+    border-color: #ff69b4;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 105, 180, 0.3);
+}
+
+/* Tombol Submit */
+button[type="button"],
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #ff69b4;
+    /* Pink */
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Tombol hover */
+button[type="button"]:hover,
+button[type="submit"]:hover {
+    background-color: #ff85c4;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Header tabel */
+thead th {
+    background-color: #ffb6c1;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #fff;
+}
+
+/* Body tabel */
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Alternatif barisan tabel */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover tabel */
+tbody tr:hover {
+    background-color: #ffe4e1;
+}
+
+/* Edit & Delete Button dalam tabel */
+.edit-btn {
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+    background-color: #ff85c4;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    background-color: #ff3366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #e70092;
+}
+
+/* Responsif Design */
+@media (max-width: 600px) {
+    section {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select,
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+
+/* Stok produk */
+.stok-low {
+    color: #ff0000;
+    /* Warna merah untuk stok di bawah 5 */
+    font-weight: bold;
+}
+
+.stok-available {
+    color: #000;
+    /* Warna hitam standar untuk stok di atas 5 */
+    font-weight: bold;
+}
